@@ -1,7 +1,7 @@
 public String aOrAn(String word) {
     //code here
     String modifiedWord;
-    if ( word.startsWith(a,e,i,o,u)){
+    if ( word.startsWith('a','e','i','o','u')){
         modifiedWord = 'an '+ word;    
     } else {
         modifiedWord = 'a '+ word;
