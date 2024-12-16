@@ -3,6 +3,7 @@ public Boolean isEndWithZero(Integer num){
     Integer remainder = Math.mod(num,10)
      if(remainder == 0){
          return true;
-     } else
+     } else{
      return false;
+     }
 }
