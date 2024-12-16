@@ -1,15 +1,15 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
-    Integer d= '';
+    String d= '';
     Integer sumOfAandB = a+b;
     Integer sumOfBandC = b+c;
     Integer sumOfAandC = a+c;
     if (sumOfAandB == c){
-        return c;
+        return 'c';
     }else if( sumOfBandC == a){
-        return a;
+        return 'a';
     }else if ( sumOfAandC == b){
-        return b;
+        return 'b';
     }
     else{
         return d;
