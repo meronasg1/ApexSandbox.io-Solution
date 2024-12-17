@@ -7,7 +7,7 @@ Integer divBy400 = Math.mod(year, 400);
 if (divBy4!=0){
     return false;
 }else if(divBy100!=0) {
-    return false;
+    return TRUE;
 }else if(divBy400!=0) {
     return false;
 }else{
