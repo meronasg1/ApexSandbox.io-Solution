@@ -4,7 +4,7 @@ public Integer nextPrime(Integer num) {
 {
     num=num+1;
     isprime=isprime(num);
-}while (!isPrime)
+}while (!isPrime);
 
 return num;
     
