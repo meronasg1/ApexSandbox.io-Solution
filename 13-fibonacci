@@ -2,7 +2,7 @@ public Integer fibonacci(Integer n) {
     //code here
     Integer lastValue = 1;
     Integer currentValue = 1;
-    Integer sum;
+    Integer sum = lastValue+currentValue;
     if (n==1||n==2){
 
        return currentValue;
@@ -11,6 +11,7 @@ public Integer fibonacci(Integer n) {
     for (Integer i=3; i<n; i++){
 
         lastValue =currentValue;
+        currentValue=sum;
         sum = lastValue+currentValue;
 
     }
