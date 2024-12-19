@@ -5,10 +5,10 @@ public String changeTimeFormat(String strTime) {
     String times='';
     if (hourInt>12 && hourInt<23){
         hourInt= hourInt-12; 
-        times= hourInt+ ':'+minute + 'PM';
+        times= hourInt+ ':'+minute + ' PM';
         return times;
     }else {
-        return strTime+'AM';
+        return strTime+' AM';
     }
 
 
