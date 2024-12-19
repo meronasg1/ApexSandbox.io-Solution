@@ -7,6 +7,8 @@ public String changeTimeFormat(String strTime) {
         hourInt= hourInt-12; 
         time= (String)hourInt+ ':'+minute + 'PM';
         return time;
+    }else {
+        return strTime+'AM';
     }
 
 
