@@ -9,8 +9,7 @@ public String changeTimeFormat(String strTime) {
         times= hourInt+ ':'+minute + ' PM';
         return times;
     }else if (hourInt==00){
-        times= hourInt+ ':'+minute + ' AM';
-        return times;
+        return strTime+' AM';
     }else if (hourInt==12){
         return strTime + ' PM';    
     }else {
