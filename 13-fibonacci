@@ -3,7 +3,7 @@ public Integer fibonacci(Integer n) {
     Integer lastValue = 1;
     Integer currentValue = 1;
 
-    if (n>2){
+    if (n<2){
          currentValue =currentValue+lastValue;
        return currentValue;
     }else{
