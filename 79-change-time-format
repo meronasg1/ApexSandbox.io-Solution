@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
     String minute = strTime.substringAfter(':');
     String hour = strTime.substringBefore(':');
-    Integer hourInt =Integer.valueOf(hour)
+    Integer hourInt =Integer.valueOf(hour);
     String time='';
     if (hourInt>12 && hourInt<23){
         hourInt= hourInt-12; 
