@@ -1,12 +1,12 @@
 public Id insertStudent(String name, String email) {
     // code here
-  apxio__Student__c  stu = new apxio__Student__c ();
+  apxio__Student__c apxStudent = new apxio__Student__c();
 
-            stu.Name = name;
+        apxStudent.Name = name;
 
-            stu.apxio__Email__c=email;
+        apxStudent.apxio__Email__c = email;
 
-            insert stu;
+        insert apxStudent;
 
-            return stu.Id;
+        return apxStudent.Id;
 }
