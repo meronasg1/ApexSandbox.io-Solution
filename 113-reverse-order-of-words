@@ -1,14 +1,29 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
-  String nameRev = (sentence.reverse());
+      try{
+
+        String nameRev = (sentence.reverse());
 
         List<String> StringName = nameRev.split(' ');
-    String returnString ='';
-    for (String str : words){
-        returnString = returnString + str.reverse() +' ';
-        
-    }
+
+        String returnString = '';
+
+        for(String str : StringName){
+
+            returnString = returnString + str.reverse() +' ' ;
+
+        }
 
         return returnString.trim();
+
+    }
+
+    catch(NullPointerException exp){
+
+        return null;
+
+    }
+
+
 
 }
