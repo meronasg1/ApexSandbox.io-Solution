@@ -4,7 +4,7 @@ public String reverseWordsInASentence(String sentence){
     List <String> words = sentence.split(' ');
     String returnString ='';
     for (String str : words){
-        returnString = returnString + str.reverse() +' ';
+        returnString = returnString + str +' ';
         
     }
 
