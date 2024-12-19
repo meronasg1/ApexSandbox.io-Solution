@@ -2,10 +2,10 @@ public String changeTimeFormat(String strTime) {
     String minute = strTime.substringAfter(':');
     String hour = strTime.substringBefore(':');
     Integer hourInt =Integer.valueOf(hour);
-    String time='';
+    String times='';
     if (hourInt>12 && hourInt<23){
         hourInt= hourInt-12; 
-        time= (String)hourInt+ ':'+minute + 'PM';
+        times= (String)hourInt+ ':'+minute + 'PM';
         return time;
     }else {
         return strTime+'AM';
