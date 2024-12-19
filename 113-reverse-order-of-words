@@ -2,11 +2,12 @@ public String reverseWordsInASentence(String sentence){
     //your flawless code here
     String reversedSentence = sentence.reverse();
     List <String> words = sentence.split(' ');
-    for (Integer i=0; i<words.size(); i++){
+    String returnString ='';
+    for (String str : words){
        String reversedWords = words.get(i);
-        reversedSentence = reversedWords + ' ';
+        returnString = returnString + str.reverse() +' ';
         
     }
 
-    return reversedSentence;
+    return returnString;
 }
