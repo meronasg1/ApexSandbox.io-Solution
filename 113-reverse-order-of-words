@@ -9,5 +9,6 @@ public String reverseWordsInASentence(String sentence){
         
     }
 
-    return returnString;
+        return returnString.trim();
+
 }
