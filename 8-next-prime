@@ -11,7 +11,7 @@ public Integer nextPrime(Integer num) {
 while (!isPrime){
     
     isprime=isprime(nums);
-    num=num+1;
+    nums=num+1;
 }
 
 return num;
