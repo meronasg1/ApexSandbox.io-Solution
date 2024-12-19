@@ -5,7 +5,7 @@ public String changeTimeFormat(String strTime) {
     String time='';
     if (hourInt>12 && hourInt<23){
         hourInt= hourInt-12; 
-        time= hourInt+ ':'+minute + 'PM';
+        time= (String)hourInt+ ':'+minute + 'PM';
         return time;
     }
 
