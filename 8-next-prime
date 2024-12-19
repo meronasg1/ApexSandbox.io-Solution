@@ -6,10 +6,13 @@ public Integer nextPrime(Integer num) {
         return 2;
 
     }
-{
+      Integer  nums =num+1;
+
+while (!isPrime){
+    
+    isprime=isprime(nums);
     num=num+1;
-    isprime=isprime(num);
-}while (!isPrime);
+}
 
 return num;
     
