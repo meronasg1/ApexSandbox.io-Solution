@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
     //code here
- Boolean isprime;
+ Boolean isprime= false;
   if(num < 2) {
 
         return 2;
