@@ -1,0 +1,14 @@
+public String registerStudent(String name, String phone, String email) {
+    // code here
+     apxio__Student__c apxStudent = new apxio__Student__c();
+
+        apxStudent.Name = name;
+
+        apxStudent.apxio__Email__c = email;
+        apxStudent.apxio__Phone__c  = phone;
+
+
+        insert apxStudent;
+
+        return apxStudent.apxio__Registration_Number__c ;
+}
