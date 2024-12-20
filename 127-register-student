@@ -9,7 +9,7 @@ public String registerStudent(String name, String phone, String email) {
 
 
         insert apxStudent;
-        Select id, apxio__Registration_Number__c from apxio__Student__c where id = apxStudent.id; 
+        apxio__Student__c thisStudent = Select id, apxio__Registration_Number__c from apxio__Student__c where id = apxStudent.id; 
 
-        return apxStudent.apxio__Registration_Number__c ;
+        return thisStudent.apxio__Registration_Number__c ;
 }
