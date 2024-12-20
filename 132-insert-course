@@ -5,7 +5,7 @@ public Id insertCourse(String name, String details, Integer credits) {
         apxCourse.Name = name;
 
         apxCourse.apxio__Course_Details__c = details;
-        apxCourse.apxio__Credits__c = credits;
+        apxCourse.apxio__Credits__c = (String)credits;
 
         insert apxCourse;
 
