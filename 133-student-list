@@ -1,8 +1,17 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     // code here
     List <apxio__Student__c> stds = new List <apxio__Student__c>();
-    for (apxio__Student__c std : studentNames){
-        stds.add(0, apxio__Student__c.apxio__Email__c
-=studentEmails);
+    for (Integer i=0; i<studentNames.size(); i++) {
+
+        apxio__Student__c s = new apxio__Student__c();
+
+        s.Name = studentNames[i];
+
+        s.apxio__Email__c = studentEmails[i];
+
+        stds.add(s);
+
     }
+
+    insert stds;
 }
