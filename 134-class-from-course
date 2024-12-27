@@ -5,8 +5,10 @@ public Id classFromCourse(String courseName) {
         return null; 
     }else {
         apxio__Class__c cls = new apxio__Class__c.apxio__Course__c (apxio__Course__c =crs.ID);
-        List<apxio__Class__c> clsses = [Select  ID, name  From  apxio__Class__c Where name := courseName ];
-        return clsses.Id;
+        insert cls; 
+        //List<apxio__Class__c> clsses = [Select  ID, name  From  apxio__Class__c Where name := courseName ];
+        
+        return cls.Id;
     }
 
 }
