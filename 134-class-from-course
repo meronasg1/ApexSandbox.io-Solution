@@ -1,12 +1,12 @@
 public Id classFromCourse(String courseName) {
     // code here
-    apxio__Course__c crs = [Select name, id  From  apxio__Course__c Where name := courseName ];
+    apxio__Course__c crs = [Select name, ID  From  apxio__Course__c Where name := courseName ];
     if (courseName== null ){
-return null; 
+        return null; 
     }else {
         apxio__Class__c cls = new apxio__Class__c.apxio__Course__c (apxio__Course__c =courseName);
-        apxio__Class__c clsses = [Select  id  From  apxio__Class__c Where name := courseName ];
-        return id;
+        apxio__Class__c clsses = [Select  ID, name  From  apxio__Class__c Where name := courseName ];
+        return clsses.Id;
     }
 
 }
