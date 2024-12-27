@@ -5,7 +5,7 @@ public Id classFromCourse(String courseName) {
         return null; 
     }else {
         apxio__Class__c cls = new apxio__Class__c.apxio__Course__c (apxio__Course__c =courseName);
-        apxio__Class__c clsses = [Select  ID, name  From  apxio__Class__c Where name := courseName ];
+        List<apxio__Course__c> clsses = [Select  ID, name  From  apxio__Class__c Where name := courseName ];
         return clsses.Id;
     }
 
