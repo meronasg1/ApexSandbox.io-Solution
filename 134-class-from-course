@@ -1,6 +1,6 @@
 public Id classFromCourse(String courseName) {
     // code here
-    apxio__Course__c crs = [Select name, ID  From  apxio__Course__c Where name := courseName ];
+    List<apxio__Course__c> crs = [Select name, ID  From  apxio__Course__c Where name := courseName ];
     if (courseName== null ){
         return null; 
     }else {
