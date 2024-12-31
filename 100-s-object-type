@@ -1,0 +1,10 @@
+public Boolean isTypeAccount(sObject record)
+{
+    // code here
+    Account recordAcc = new Account(); 
+    if (record= recordAcc){
+        return true; 
+    }else{
+        return false; 
+    }
+}
